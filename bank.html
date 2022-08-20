@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank</title>
+</head>
+
+<body>
+    <section>
+        <h1 class="text-5xl mb-5 mt-6 text-center">Start Transaction</h1>
+        <div class="grid grid-cols-3 mx-auto w-9/12 mt-10">
+            <div class="bg-red-300 w-9/12 p-7 rounded-md ">
+                <h3 class="text-2xl">Diposite</h3>
+                <h4 id="d-deposite" class="text-4xl">00</h4>
+            </div>
+            <div class="bg-lime-400 w-9/12 p-7 rounded-md">
+                <h3 class="text-2xl">Withdraw</h3>
+                <h4 id="withdraw-box" class="text-4xl">00</h4>
+            </div>
+            <div class="bg-purple-500 w-9/12 p-7 rounded-md">
+                <h3 class="text-2xl">Total</h3>
+                <h4 id="total-id" class="text-4xl">100</h4>
+            </div>
+        </div>
+    </section>
+    <section>
+
+        <div class="grid grid-cols-2 mx-auto w-9/12 mt-10">
+            <div class="bg-cyan-300 w-9/12 p-7 rounded-md ">
+                <h3 class="text-2xl"> Enter diposite amount</h3>
+                <input id="deposite-id" class="mt-2 mb-4 align-middle w-9/12 p-2 rounded-sm" type="text"
+                    placeholder="Enter Emount"><br>
+                <input id="deposite-btn" class="bg-orange-400 px-3 py-1 rounded-lg" value="Diposite" type="submit">
+            </div>
+            <div class="bg-yellow-300 w-9/12 p-7 rounded-md">
+                <h3 class="text-2xl">Enter withdraw amount</h3>
+                <input id="withdraw-id" class="mt-2 mb-4 align-middle w-9/12 p-2 rounded-sm" type="text"
+                    placeholder="Enter Emount"><br>
+                <input id="withdraw-btn" class="bg-orange-400 px-3 py-1 rounded-lg" value="Withdraw" type="submit">
+
+            </div>
+        </div>
+    </section>
+    <script src="deposite.js"></script>
+    <script src="withdraw.js"></script>
+</body>
+
+</html>
